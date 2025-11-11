@@ -34,3 +34,36 @@
 |  4.2  | Backtracking. Part 2                | #14 Возврат                                  | -             | 51, 37, 22, 79, 93, 216, 47            |
 |  4.3  | Dynamic Programming. Part 1         | #15 Динамическое программирование            | 70, 198       | 322, 300, 1143, 416, 64, 62, 5         |
 |  4.4  | Dynamic Programming. Part 2         | #15 Динамическое программирование            | -             | 72, 139, 152, 221, 309, 337, 494       |
+
+---
+
+# 0. Hash Map
+
+| Level  | Name                                              | Link                                                                          | Status | Repeatable |
+|:------:|:--------------------------------------------------|:------------------------------------------------------------------------------|:------:|:----------:|
+|  Easy  | 1. Two Sum                                        | https://leetcode.com/problems/two-sum/                                        |  Done  |            |
+|  Easy  | 242. Valid Anagram                                | https://leetcode.com/problems/valid-anagram/                                  |  Done  |            |
+| Medium | 49. Group Anagrams                                | https://leetcode.com/problems/group-anagrams/                                 |  Done  |            |
+| Medium | 347. Top K Frequent Elements                      | https://leetcode.com/problems/top-k-frequent-elements/                        |  Done  |     *      |
+| Medium | 3. Longest Substring Without Repeating Characters | https://leetcode.com/problems/longest-substring-without-repeating-characters/ |   .    |            |
+| Medium | 36                                                |                                                                               |        |            |
+| Medium | 454                                               |                                                                               |        |            |
+| Medium | 560                                               |                                                                               |        |            |
+| Medium | 763                                               |                                                                               |        |            |
+| Medium | 128                                               |                                                                               |        |            |
+
+```java
+// TODO print
+// string hash function
+public int hash(String str) {
+    int[] counts = new int[26];
+    for (char c : str.toCharArray()) {
+        counts[c - 'a']++;
+    }
+    return Arrays.hashCode(counts);
+}
+```
+
+```java
+// TODO сортировка массивов 347 
+```
